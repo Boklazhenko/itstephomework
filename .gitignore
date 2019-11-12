@@ -1,32 +1,13 @@
-# Prerequisites
-*.d
+*
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+!*/
+!*/week*/
+!*/week*/task*/
+!*/week*/task*/README.md
+!*/week*/task*/*/
+!*/week*/task*/*/*.cpp
+!*/week*/task*/*/*.c
+!*/week*/task*/*/*.h
+!README.md
 
-# Precompiled Headers
-*.gch
-*.pch
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
