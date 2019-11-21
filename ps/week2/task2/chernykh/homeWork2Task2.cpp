@@ -2,21 +2,23 @@
 
 using namespace std;
 
+//homeWork2Task2
+
 int main()
 {
 	long firstNumber;
 	long secondNumber;
-	long sum = 1;
+	long result = 1;
 
 	cout << "Please enter first number:\n";
 	cin >> firstNumber;
 	cout << "Plese enter second number:\n";
 	cin >> secondNumber;
 
-	for (int i = 0; i < secondNumber; i++)
+	for (int i = 0; i < secondNumber; ++i)
 	{
-		sum *= firstNumber;
+		result *= firstNumber;
 	}
-	cout << "First number in second number degree = " << sum;
+	cout << "First number in second number degree = " << result;
 
 }

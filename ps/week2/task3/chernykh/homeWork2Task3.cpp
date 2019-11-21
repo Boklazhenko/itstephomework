@@ -2,6 +2,8 @@
 
 using namespace std;
 
+//homeWork2Task3
+
 int main()
 {
 	int sum = 0;
