@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void difiningSignArrayElements(double array[], int arraySize)
+void isDetermineSignArrayElements(double array[], int arraySize)
 {
 	int minusElementCount = 0, plusElementCount = 0, zeroElementCount = 0;
 
@@ -40,7 +40,7 @@ int main()
 		array[i] = number;
 	}
 
-	difiningSignArrayElements(array, arraySize);
+	isDetermineSignArrayElements(array, arraySize);
 
 	return 0;
 }

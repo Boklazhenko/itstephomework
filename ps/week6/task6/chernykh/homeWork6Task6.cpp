@@ -5,15 +5,13 @@ using namespace std;
 double calcAvgArray(double array[], int arraySize)
 {
 	double sum = 0;
-	int count = 0;
-
+	
 	for (int i = 0; i < arraySize; i++)
 	{
 		sum += array[i];
-		++count;
 	}
 
-	double avg = sum / (double)count;
+	double avg = sum / (double)arraySize;
 
 	return avg;
 }

@@ -3,9 +3,9 @@
 
 using namespace std;
 
-string checkLuckyNumber(int number)
+bool isLuckyNumber(int number)
 {
-	string result = "";
+	bool result = false;
 	int firstNumber, secondNumber, thirdNumber;
 	int fourthNumber, fifthNumber, sixthNumber;
 	for (int i = 0; i <= number; ++i)
@@ -20,13 +20,13 @@ string checkLuckyNumber(int number)
 
 	if ((firstNumber + secondNumber + thirdNumber) == (fourthNumber + fifthNumber + sixthNumber))
 	{
-		result = "Congratulations! Your number is lucky! ;)";
-		cout << result << endl;
+		result = true;
+		return result;
 	}
 	else
 	{
-		result = "Sorry, your number isn't lucky :(";
-		cout << result << endl;
+		result = false;
+		return result;
 	}
 
 	return result;
@@ -37,12 +37,19 @@ int main()
 	int number = 0;
 	cout << "Please enter a six digit number: " << endl;
 	cin >> number;
-	if (number >= 1000000)
+	if (number >= 1000000 || number <= 99999)
 	{
-		cout << "Error, your number is too big!" << endl;
+		cout << "Error, you entered the wrong number!" << endl;
 
 		return 1;
 	}
 
-	checkLuckyNumber(number);
+	if (isLuckyNumber(number) == true)
+	{
+		cout << "Congratulations! Your number is lucky! ;)" << endl;
+	}
+	else
+	{
+		cout << "Sorry, your number isn't lucky :(" << endl;
+	}
 }

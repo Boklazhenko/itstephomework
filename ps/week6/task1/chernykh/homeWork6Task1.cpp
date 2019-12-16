@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int degreeNumber(int number, int degree)
+int calcDegreeNumber(int number, int degree)
 {
 	int result = 1;
 	for (int i = 0; i < degree; ++i)
@@ -12,7 +12,7 @@ int degreeNumber(int number, int degree)
 	return result;
 }
 
-double degreeNumber(double number, int degree)
+double calcDegreeNumber(double number, int degree)
 {
 	double result = 1.0;
 	for (int i = 0; i < degree; ++i)
@@ -31,13 +31,7 @@ int main()
 	cout << "Enter degree: " << endl;
 	cin >> degree;
 
-	if (degree <= -1)
-	{
-		cout << "Error, enter pisitive degree!";
-		return 1;
-	}
-
-	cout << "Number " << number << " in " << degree << " degree = " << degreeNumber(number, degree);
+	cout << "Number " << number << " in " << degree << " degree = " << calcDegreeNumber(number, degree);
 
 	return 0;
 }

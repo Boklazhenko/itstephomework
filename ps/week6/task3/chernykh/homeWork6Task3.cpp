@@ -4,17 +4,17 @@ using namespace std;
 
 void searchCompliteNumbers(int firstNumber, int secondNumber)
 {
-	for (; firstNumber < secondNumber; ++firstNumber)
+	for (int i = firstNumber; i < secondNumber; ++i)
 	{
 		int sumDividers = 0;
-		for (int i = 1; i < firstNumber; ++i)
+		for (int j = 1; j < i; ++j)
 		{
-			if ((firstNumber % i) == 0)
+			if ((i % j) == 0)
 			{
-				sumDividers += i;
+				sumDividers += j;
 			}
 		}
-		if (sumDividers == firstNumber && sumDividers)
+		if (sumDividers == i && sumDividers)
 		{
 			cout << sumDividers << endl;
 		}

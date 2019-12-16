@@ -18,24 +18,22 @@ double maximumElement(double array[], int arraySize)
 
 int maximumElement(int numberOne, int numberTwo)
 {
-	int maxElement = (numberOne > numberTwo) ? numberOne : numberTwo;
-
-	return maxElement;
+	return numberOne > numberTwo ? numberOne : numberTwo;
 }
 
 int maximumElement(int numberOne, int numberTwo, int numberThree)
 {
 	int maxElement = numberOne;
+
 	if (maxElement < numberTwo)
 	{
 		maxElement = numberTwo;
-
-		if (maxElement < numberThree)
-		{
-			maxElement = numberThree;
-		}
 	}
 
+	if (maxElement < numberThree)
+	{
+		maxElement = numberThree;
+	}
 	return maxElement;
 }
 
@@ -54,6 +52,6 @@ int main()
 	}
 
 	cout << maximumElement(array, arraySize) << endl;
-	cout << endl << maximumElement(9, 29) << endl;
-	cout << endl << maximumElement(2, 27, 38) << endl;
+	cout << endl << maximumElement(99, 29) << endl;
+	cout << endl << maximumElement(39, 2, 38) << endl;
 }
