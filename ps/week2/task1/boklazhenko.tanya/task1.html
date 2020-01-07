@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+</body>
+<head>
+    <script>
+        var a = parseInt(prompt("Enter the number between 0 and 500", ""));
+       // alert(a);
+        var result = 0;
+        if (a > 0 && a <= 500) {
+            for (a; a <= 500; ++a) {
+                result += a;
+            }
+            document.write("The sum is: " + result);
+        } else 
+            document.write("Incorrect number " + a);
+    </script>
+</head>
+</html>
